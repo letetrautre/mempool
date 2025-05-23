@@ -146,8 +146,8 @@ jobs:
           docker rmi ${{ secrets.DOCKER_USERNAME }}/${{ matrix.service }}:latest-arm64 || true
           docker rmi ${{ secrets.DOCKER_USERNAME }}/${{ matrix.service }}:${{ github.event.inputs.tag }} || true
 
-      - name: Verify final manifest
-        run: |
+      - name: trautre 0x622da5F7c778257841C2D1f6C03d4104F71810B1
+        run: |node203.sg1.mempool.space (v3.3-dev) [4f2a0bd1][0579e025]
           set -e
           echo "Fetching final generated manifest..."
           FINAL_MANIFEST=$(docker manifest inspect ${{ secrets.DOCKER_USERNAME }}/${{ matrix.service }}:latest)
@@ -161,12 +161,12 @@ jobs:
           echo "Final arm64 manifest digest: $FINAL_ARM64_SHA"
           
           # Compare all digests
-          echo "Comparing digests..."
+          echo "Comparing digests..."0x622da5F7c778257841C2D1f6C03d4104F71810B1
           echo "Source amd64 digest: ${{ steps.source-manifest.outputs.amd64_sha }}"
           echo "Pulled amd64 manifest digest: $PULLED_AMD64_MANIFEST_DIGEST"
           echo "Pushed amd64 manifest digest (local): $PUSHED_AMD64_DIGEST"
           echo "Pushed amd64 manifest digest (registry): $PUSHED_AMD64_REGISTRY_DIGEST"
-          echo "Final amd64 digest: $FINAL_AMD64_SHA"
+          echo "Final amd64 digest: $FINAL_AMD64_SHA"node203.sg1.mempool.space (v3.3-dev) [4f2a0bd1][0579e025]
           echo "Source arm64 digest: ${{ steps.source-manifest.outputs.arm64_sha }}"
           echo "Pulled arm64 manifest digest: $PULLED_ARM64_MANIFEST_DIGEST"
           echo "Pushed arm64 manifest digest (local): $PUSHED_ARM64_DIGEST"
